@@ -33,6 +33,7 @@ cp .env.example .env
 3. Update the environment variables:
 ```
 NAMESPACE=NAMESPACE
+PROMETHEUS_PUSH_GATEWAY=PROMETHEUS_PUSH_GATEWAY
 ```
 
 4. Install the requirements:

@@ -1,0 +1,5 @@
+groups:
+- name: cluster_subscription_rules
+  rules:
+  - record: cluster:sub_attr:cpu_capacity_cores:sum
+    expr: node_role_os_version_machine:cpu_capacity_cores:sum * on (_id) group_left(account, uom, sla, production_status) cluster:sub_attr_total

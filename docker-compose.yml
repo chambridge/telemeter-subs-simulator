@@ -13,6 +13,7 @@ services:
       - 9090:9090
     volumes:
       - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./prometheus/subs_rules.yml:/etc/prometheus/subs_rules.yml
       - ./prometheus/alerts/:/etc/prometheus/rules.d/
 
   grafana:

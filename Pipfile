@@ -8,6 +8,7 @@ pre-commit = "*"
 
 [packages]
 prometheus-client = "*"
+diagrams = "*"
 
 [requires]
 python_version = "3.8"
